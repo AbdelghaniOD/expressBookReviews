@@ -78,7 +78,6 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
 });
 
 // Delete a book review
-// Delete a book review
 regd_users.delete("/auth/review/:isbn", (req, res) => {
   const isbn = req.params.isbn; // Book ID (isbn is used as the identifier)
   const token = req.headers["authorization"]?.split(" ")[1]; // Extract token from the Authorization header
